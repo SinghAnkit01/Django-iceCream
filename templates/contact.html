@@ -1,0 +1,47 @@
+
+   {% extends 'base.html' %}
+   {% block title %}
+   Contact  
+   {% endblock title %}
+{% comment %} now its time to fill all the variables like title,body {% endcomment %}
+
+{% comment %} base.html will work before index.html {% endcomment %}
+   {% block body  %}
+   <div class="container-fluid px-0 mb-3">
+   <img src="https://source.unsplash.com/1200x400/?phone" class="d-block w-100 my-0" alt="...">
+   </div>  
+   <div class="container">
+   <h1 class="text-center">Contact Us</h1>
+   <form method="post" action="/contact">
+      {% csrf_token %}
+      <div class="mb-3">
+         <label for="name" class="form-label">Name</label>
+         <input type="text" class="form-control" name="name" id="name" maxlength="20" Required placeholder="Enter Your Name">
+         {% comment %} <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> {% endcomment %}
+       </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" maxlength="30" required name="email" aria-describedby="emailHelp" placeholder="enter your email-id">
+        {% comment %} <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> {% endcomment %}
+      </div>
+      <div class="mb-3">
+         <label for="phone" class="form-label">Phone-No</label>
+         <input type="phone" class="form-control" id="phone" name="phone" maxlength="10" required placeholder="enter your phone-no">
+         {% comment %} <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> {% endcomment %}
+       </div>
+     <div class="mb-3">
+        <label for="desc" class="form-label">Tell me about what you want to contact me for...</label>
+        <textarea class="form-control" id="desc" rows="3" name="desc" required maxlength="200"></textarea>
+        {% comment %} <input type="password" class="form-control" id="exampleInputPassword1"> {% endcomment %}
+      </div>
+      <div class="text-center">
+      <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form> 
+   </div>
+   {% comment %} This is my contact body {% endcomment %}
+  
+   {% endblock body  %}
+  {% comment %} <b> variable value is {{variable}}</b><br>
+    welcome to my website guys.......... {% endcomment %}
+    

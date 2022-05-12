@@ -1,0 +1,164 @@
+
+   {% extends 'base.html' %}
+   {% block title %}
+   Home
+   {% endblock title %}
+{% comment %} now its time to fill all the variables like title,body {% endcomment %}
+
+{% comment %} base.html will work before index.html {% endcomment %}
+   {% block body  %}
+   {% comment %} This is my body {% endcomment %}
+   <div class="container-fluid my-4 px-1" >
+      {% comment %} at y-axis margin-top and margin-bottom is 4px this all are 
+      bootstrap inbuilt classes {% endcomment %}
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-inner">
+           <div class="carousel-item active">
+             <img src="/static/image3.jpg" class="d-block w-100" alt="...">
+             {% comment %} <img src="https://source.unsplash.com/1600x500/?icecreams" class="d-block w-100" alt="..."> {% endcomment %}
+             <div class="carousel-caption d-none d-md-block">
+             <h5><font color="black">Welcome to the best ice-cream</font></h5>
+             <p><font color="black">Hello my name is Ankit Shailendra singh and i am the ownner of this shop you can contact me.</font></p>
+             {% comment %} for adding personal images use statis folder as static/image1.jpg {% endcomment %}
+             </div>
+            </div>
+           <div class="carousel-item">
+             {% comment %} <img src="https://source.unsplash.com/1600x500/?ice cream cones" class="d-block w-100" alt="..."> {% endcomment %}
+             <img src="/static/image4.jpg" class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block">
+             <h5><font color="black">We serve love with our ice-cream</font></h5>
+             <p><font color="black">Hello my name is Ankit Shailenra singh and i am the ownner of this shop you can contact me.</font></p>
+             </div>
+           </div>
+           <div class="carousel-item">
+             {% comment %} <img src="https://source.unsplash.com/1600x500/?ice cream cone" class="d-block w-100" alt="..."> {% endcomment %}
+             <img src="/static/image2.jpg" class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block">
+             <h5><font color="black">I am sure this is the best ice-cream shop you have ever seen with our efforts and nature</font></h5>
+             <p><font color="black">Hello my name is Ankit Shailendra singh and i am the ownner of this shop you can contact me.</font></p>
+             </div>
+            </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+       </div>
+   </div>
+   <div class="container my-3">
+     <h2 class="my-3 text-center">Select from our range of ice-cream</h2>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> {% endcomment %}
+            <img src="https://source.unsplash.com/1200x900/?ice creams" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> {% endcomment %}
+            <img src="https://source.unsplash.com/1200x900/?ice cream cone" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> {% endcomment %}
+            <img src="https://source.unsplash.com/1200x900/?ice creams" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> {% endcomment %}
+            <img src="https://source.unsplash.com/1200x900/?ice cream cones" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> {% endcomment %}
+            <img src="https://source.unsplash.com/1200x900/?ice cream" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> {% endcomment %}
+            <img src="https://source.unsplash.com/1200x900/?cake" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+
+       
+        
+       
+      </div>
+    </div>
+  </div>
+   {% endblock body  %}
+  {% comment %} <b> variable value is {{variable}}</b><br>
+    welcome to my website guys.......... {% endcomment %}
+    
